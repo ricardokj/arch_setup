@@ -1,0 +1,14 @@
+# "docker.service" "docker.socket" 
+
+services=("docker-desktop")
+
+for service in "${services[@]}"
+do
+	if [[ $service == "docker-desktop"  ]]; then
+		systemctl --user stop  $service
+		echo $service `systemctl --user status $service | rg 'Active'`
+	else
+		sudo systemctl stop $service
+		echo $service `systemctl status $service | rg 'Active'`
+	fi
+done

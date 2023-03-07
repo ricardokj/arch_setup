@@ -1,0 +1,9 @@
+yay -Syyu --noconfirm
+yay -Yc --noconfirm
+sudo pacman -Scc --noconfirm
+sudo pacman -Qtdq --noconfirm
+
+cp ~/codes/{up,dkdown,dkup} ~/repos/arch_setup/codes/
+cp ~/Desktop/misc_commands.sh ~/repos/arch_setup/codes/misc_commands.sh
+
+gsettings list-recursively > ~/repos/arch_setup/codes/gsettigs_list_recursively.txt
