@@ -18,7 +18,7 @@ sudo pacman -S packagekit-qt5 vim git
 sudo vim /etc/pacman.conf
 # ILoveCandy
 sudo pacman -Syu
-sudo pacman -Syu --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer fwupd ntfs-3g flatpak gnome-software-packagekit-plugin packagekit-qt5 gnome-terminal ncdu ripgrep neofetch dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog grub efibootmgr gedit python-pip bashtop 
+sudo pacman -Syu --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer fwupd ntfs-3g flatpak gnome-software-packagekit-plugin packagekit-qt5 gnome-terminal ncdu ripgrep neofetch dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog grub efibootmgr gedit python-pip bashtop bash-completion speedtest-cli
 
 sudo systemctl start bluetooth.service --now
 pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -51,7 +51,10 @@ alias sudo='sudo ' # https://askubuntu.com/questions/22037/aliases-not-available
 
 sudo EDITOR=vim visudo
 ALL=(ALL) NOPASSWD: ALL
+
 vim ~/.bashrc 
 HISTSIZE=300000
 HISTFILESIZE=200000
 export HISTCONTROL=ignoreboth:erasedups
+source /usr/share/bash-completion/bash_completion
+
