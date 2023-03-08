@@ -6,4 +6,4 @@ sudo pacman -Qtdq --noconfirm
 cp -u ~/codes/{up,dkdown,dkup} ~/repos/arch_setup/codes/
 cp -u ~/Desktop/misc_commands.sh ~/repos/arch_setup/codes/misc_commands.sh
 
-gsettings list-recursively > /tmp/gsettigs_list_recursively.txt && cp -u /tmp/gsettigs_list_recursively.txt ~/repos/arch_setup/codes/gsettigs_list_recursively.txt
+gsettings list-recursively > ~/repos/arch_setup/codes/gsettigs_list_recursively.txt
