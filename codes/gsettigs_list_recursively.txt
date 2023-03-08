@@ -394,7 +394,7 @@ org.gnome.desktop.media-handling autorun-never false
 org.gnome.desktop.media-handling autorun-x-content-ignore @as []
 org.gnome.desktop.media-handling autorun-x-content-open-folder @as []
 org.gnome.desktop.media-handling autorun-x-content-start-app ['x-content/unix-software', 'x-content/ostree-repository']
-org.gnome.desktop.notifications application-children ['org-gnome-console', 'org-gnome-software', 'mountable-volume-940ea03e0ea01b6e', 'org-gnome-settings', 'code-oss', 'org-gnome-fileroller', 'org-gnome-nautilus', 'org-gnome-totem', 'org-gnome-extensions-desktop']
+org.gnome.desktop.notifications application-children ['org-gnome-console', 'org-gnome-software', 'mountable-volume-940ea03e0ea01b6e', 'org-gnome-settings', 'code-oss', 'org-gnome-fileroller', 'org-gnome-nautilus', 'org-gnome-totem', 'org-gnome-extensions-desktop', 'gnome-power-panel']
 org.gnome.desktop.notifications show-banners true
 org.gnome.desktop.notifications show-in-lock-screen true
 org.gnome.desktop.peripherals.tablet area [0.0, 0.0, 0.0, 0.0]
@@ -680,7 +680,7 @@ org.gnome.gedit.plugins.filebrowser filter-pattern ''
 org.gnome.gedit.plugins.filebrowser open-at-first-doc true
 org.gnome.gedit.plugins.filebrowser root 'file:///'
 org.gnome.gedit.plugins.filebrowser tree-view true
-org.gnome.gedit.plugins.filebrowser virtual-root 'file:///home/ricardokj/Desktop'
+org.gnome.gedit.plugins.filebrowser virtual-root 'file:///home/ricardokj/repos/arch_setup/codes'
 org.gnome.gedit.plugins.filebrowser.nautilus click-policy 'double'
 org.gnome.gedit.plugins.pythonconsole command-color '#314e6c'
 org.gnome.gedit.plugins.pythonconsole error-color '#990000'
@@ -744,7 +744,7 @@ org.gnome.gnome-system-monitor cpu-smooth-graph true
 org.gnome.gnome-system-monitor cpu-stacked-area-chart false
 org.gnome.gnome-system-monitor current-tab 'resources'
 org.gnome.gnome-system-monitor disks-interval 5000
-org.gnome.gnome-system-monitor graph-data-points 200
+org.gnome.gnome-system-monitor graph-data-points 100
 org.gnome.gnome-system-monitor graph-update-interval 100
 org.gnome.gnome-system-monitor kill-dialog true
 org.gnome.gnome-system-monitor logarithmic-scale false
@@ -778,7 +778,7 @@ org.gnome.gnome-system-monitor.disktreenew col-4-width 0
 org.gnome.gnome-system-monitor.disktreenew col-5-visible true
 org.gnome.gnome-system-monitor.disktreenew col-5-width 80
 org.gnome.gnome-system-monitor.disktreenew col-6-visible true
-org.gnome.gnome-system-monitor.disktreenew col-6-width 878
+org.gnome.gnome-system-monitor.disktreenew col-6-width 0
 org.gnome.gnome-system-monitor.disktreenew columns-order [0]
 org.gnome.gnome-system-monitor.disktreenew sort-col 1
 org.gnome.gnome-system-monitor.disktreenew sort-order 0
@@ -1137,7 +1137,7 @@ org.gnome.shell.window-switcher app-icon-mode 'both'
 org.gnome.shell.window-switcher current-workspace-only true
 org.gnome.shell.world-clocks locations @av []
 org.gnome.software allow-updates true
-org.gnome.software check-timestamp int64 1678231367
+org.gnome.software check-timestamp int64 1678280360
 org.gnome.software compatible-projects ['GNOME', 'KDE', 'XFCE']
 org.gnome.software download-updates true
 org.gnome.software download-updates-notify true
@@ -1232,7 +1232,7 @@ org.gtk.Settings.FileChooser sort-directories-first false
 org.gtk.Settings.FileChooser sort-order 'ascending'
 org.gtk.Settings.FileChooser startup-mode 'recent'
 org.gtk.Settings.FileChooser type-format 'category'
-org.gtk.Settings.FileChooser window-position (26, 23)
+org.gtk.Settings.FileChooser window-position (617, 32)
 org.gtk.Settings.FileChooser window-size (1203, 936)
 org.gtk.gtk4.Settings.ColorChooser custom-colors @a(dddd) []
 org.gtk.gtk4.Settings.ColorChooser selected-color (false, 1.0, 1.0, 1.0, 1.0)
