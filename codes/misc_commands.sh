@@ -56,5 +56,5 @@ vim ~/.bashrc
 HISTSIZE=300000
 HISTFILESIZE=200000
 export HISTCONTROL=ignoreboth:erasedups
-source /usr/share/bash-completion/bash_completion
-
+export PS1="\[$(tput bold)\]\t\[$(tput sgr0)\] [\u \[$(tput sgr0)\]\[\033[38;5;45m\]\w\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
+export HISTTIMEFORMAT="%F %T "
