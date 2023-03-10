@@ -48,7 +48,6 @@ gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 40
 alias sudo='sudo ' # https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
 # jupyter code bug: https://stackoverflow.com/questions/71106136/jupyter-extension-for-vscode-on-linux-throws-error-when-doing-anything-jupyter-r/71245496#71245496
 
-
 sudo EDITOR=vim visudo
 ALL=(ALL) NOPASSWD: ALL
 
@@ -65,3 +64,6 @@ sed -n '/um/{/tres/{/dois/{p}}}' umdoistres
 grep -P '(?=.*um)(?=.*dois)(?=.*tres)' umdoistres
 rg '(?=.*um)(?=.*dois)(?=.*tres)' umdoistres --pcre2 -N
 awk '/um/&&/dois/&&/tres/' umdoistres
+
+
+docker run --rm --network amundsen_amundsennet --name ubuntu -it -v /home/ricardokj/repos/amundsen/databuilder/databuilder/task/:/task ubuntu
