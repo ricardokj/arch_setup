@@ -58,3 +58,5 @@ HISTFILESIZE=200000
 export HISTCONTROL=ignoreboth:erasedups
 export PS1="\[$(tput bold)\]\t\[$(tput sgr0)\] [\u \[$(tput sgr0)\]\[\033[38;5;45m\]\w\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
 export HISTTIMEFORMAT="%F %T "
+
+IFS=','; for dist in `neofetch --help | awk '/AIX/,/Zorin/ {print}'| tr '\n' ' ' | sed -E 's/(NOTE:|\s)//g'`; do clear &&  echo $dist && neofetch --ascii_distro $dist && sleep 1  ; done
