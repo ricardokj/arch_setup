@@ -60,3 +60,8 @@ export PS1="\[$(tput bold)\]\t\[$(tput sgr0)\] [\u \[$(tput sgr0)\]\[\033[38;5;4
 export HISTTIMEFORMAT="%F %T "
 
 IFS=','; for dist in `neofetch --help | awk '/AIX/,/Zorin/ {print}'| tr '\n' ' ' | sed -E 's/(NOTE:|\s)//g'`; do clear &&  echo $dist && neofetch --ascii_distro $dist && sleep 1  ; done
+
+sed -n '/um/{/tres/{/dois/{p}}}' umdoistres
+grep -P '(?=.*um)(?=.*dois)(?=.*tres)' umdoistres
+rg '(?=.*um)(?=.*dois)(?=.*tres)' umdoistres --pcre2 -N
+awk '/um/&&/dois/&&/tres/' umdoistres
