@@ -48,7 +48,6 @@ gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 40
 alias sudo='sudo ' # https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
 # jupyter code bug: https://stackoverflow.com/questions/71106136/jupyter-extension-for-vscode-on-linux-throws-error-when-doing-anything-jupyter-r/71245496#71245496
 
-
 sudo EDITOR=vim visudo
 ALL=(ALL) NOPASSWD: ALL
 
@@ -56,8 +55,7 @@ vim ~/.bashrc
 HISTSIZE=300000
 HISTFILESIZE=200000
 export HISTCONTROL=ignoreboth:erasedups
-export PS1="\[$(tput bold)\]\t\[$(tput sgr0)\] [\u \[$(tput sgr0)\]\[\033[38;5;45m\]\w\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
-export HISTTIMEFORMAT="%F %T "
+export PS1="[\u \[$(tput sgr0)\]\[\033[38;5;45m\]\w\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
 
 IFS=','; for dist in `neofetch --help | awk '/AIX/,/Zorin/ {print}'| tr '\n' ' ' | sed -E 's/(NOTE:|\s)//g'`; do clear &&  echo $dist && neofetch --ascii_distro $dist && sleep 1  ; done
 
