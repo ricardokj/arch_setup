@@ -45,6 +45,7 @@ sudo gedit /etc/security/faillock.conf # set deny=0
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 40
 
+alias upd='yay -Syyu --noconfirm && yay -Yc --noconfirm && sudo pacman -Scc --noconfirm && sudo pacman -Qtdq --noconfirm'
 alias sudo='sudo ' # https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
 # jupyter code bug: https://stackoverflow.com/questions/71106136/jupyter-extension-for-vscode-on-linux-throws-error-when-doing-anything-jupyter-r/71245496#71245496
 
