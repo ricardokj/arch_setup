@@ -54,8 +54,8 @@ ALL=(ALL) NOPASSWD: ALL
 vim ~/.bashrc 
 HISTSIZE=300000
 HISTFILESIZE=200000
-export HISTCONTROL=ignoreboth:erasedups
-export PS1="[\u \[$(tput sgr0)\]\[\033[38;5;45m\]\w\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
+HISTCONTROL=ignoreboth:erasedups
+PS1="[\u \[$(tput sgr0)\]\[\033[38;5;45m\]\w\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
 
 IFS=','; for dist in `neofetch --help | awk '/AIX/,/Zorin/ {print}'| tr '\n' ' ' | sed -E 's/(NOTE:|\s)//g'`; do clear &&  echo $dist && neofetch --ascii_distro $dist && sleep 1  ; done
 
