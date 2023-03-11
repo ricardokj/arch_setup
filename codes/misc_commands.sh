@@ -63,3 +63,6 @@ sed -n '/um/{/tres/{/dois/{p}}}' umdoistres
 grep -P '(?=.*um)(?=.*dois)(?=.*tres)' umdoistres
 rg '(?=.*um)(?=.*dois)(?=.*tres)' umdoistres --pcre2 -N
 awk '/um/&&/dois/&&/tres/' umdoistres
+
+
+docker run --rm --network amundsen_amundsennet --name ubuntu -it -v /home/ricardokj/repos/amundsen/databuilder/databuilder/task/:/task ubuntu
